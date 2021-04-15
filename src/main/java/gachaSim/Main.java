@@ -1,7 +1,7 @@
 package gachaSim;
 
 import java.util.Scanner;
-
+//Hola
 public class Main {
     private static Item[] pool;
     private static Gacha gacha;
