@@ -6,14 +6,12 @@ public class Main {
     private static Item[] pool;
     private static Gacha gacha;
     private static Scanner kbd = new Scanner(System.in);
-    private static int count=0;
 
     public static void main(String[] args) {
         while(true){
         init();
         System.out.println(gacha.roll());
         kbd.nextLine();
-        count++;
         }
     }
 
