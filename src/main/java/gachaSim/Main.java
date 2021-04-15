@@ -9,12 +9,16 @@ public class Main {
     private static int count=0;
 
     public static void main(String[] args) {
+        Item roll;
         while(true){
         init();
-        System.out.println(gacha.roll());
-        kbd.nextLine();
+        roll = gacha.roll();
+        System.out.println(roll);
+        //kbd.nextLine();
         count++;
+        if(roll.getName().equals("diamante")) break;
         }
+        System.out.printf("Número de tiradas: %d", count);
     }
 
     private static void init(){
